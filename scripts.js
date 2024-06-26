@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav a, .gallery a');
     const galleryLinks = document.querySelectorAll('.gallery a');
     const sections = document.querySelectorAll('section');
+    const controller = new ScrollMagic.Controller(); // Initialize ScrollMagic controller
 
     // Smooth scrolling for internal links
     links.forEach(link => {
@@ -54,5 +55,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }, options);
     sections.forEach(section => {
         observer.observe(section);
+    });
+
+    // ScrollMagic animations
+    sections.forEach(section => {
+        new ScrollMagic.Scene({
+            triggerElement: section, // point of execution
+            duration: 500, // pin the element for a total of 500px
+        })
+        .setPin(section) // the element we want to pin
+        .addTo(controller);
     });
 });
