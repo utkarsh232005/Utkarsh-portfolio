@@ -10,7 +10,18 @@ body {
     color: #e9e9e9;
     transition: background-color 0.5s, color 0.5s;
 }
-
+/* Body Styles */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
 header {
     color: #fff;
     padding: 1rem;
