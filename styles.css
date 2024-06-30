@@ -109,7 +109,10 @@ img {
     width: 100%;
     height: auto;
 }
-
+.artwork {
+    width: 25%;
+    height: auto;
+}
 @media screen and (max-width: 600px) {
     img {
         width: 100%;
