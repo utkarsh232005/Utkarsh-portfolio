@@ -1,14 +1,19 @@
 /* Import Montserrat font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 body {
     font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 16px; /* Adjust as needed */
     margin: 0;
     padding: 0;
     background: url('https://c4.wallpaperflare.com/wallpaper/944/995/821/abstract-backgrounds-minimalistic-website-wallpaper-preview.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #e9e9e9;
     transition: background-color 0.5s, color 0.5s;
+    letter-spacing: 2px; /* Adjust as needed */
+    line-height: 1.6; /* Adjust as needed */
 }
 /* Body Styles */
 body::before {
@@ -38,7 +43,8 @@ nav ul {
 nav a {
     color: #f0f4f8;
     text-decoration: none;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
     transition: color 0.3s, background-color 0.3s, border 0.3s, padding 0.3s; /* Add this line */
 }
 
@@ -48,8 +54,13 @@ nav a:hover {
     border: 2px solid #ffffff; /* This adds a white border */
     border-radius: 10px; /* This makes the edges curved */
     padding: 5px; /* This adds some space around the text */
+    animation: inOutAnimation 1s infinite;
 }
-
+@keyframes inOutAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
 section {
     padding: 2rem;
     text-align: center;
