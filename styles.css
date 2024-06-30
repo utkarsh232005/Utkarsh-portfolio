@@ -50,7 +50,6 @@ nav a {
 
 nav a:hover {
     color: #000000; /* Change this to the color you want for the text */
-    filter: blur(5px);
     background-color:#d7c4c4; /* This makes the box fully white */
     border: 2px solid #d7c4c4; /* This adds a white border */
     border-radius: 10px; /* This makes the edges curved */
