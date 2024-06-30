@@ -52,8 +52,8 @@ nav a:hover {
     color: #000000; /* Change this to the color you want for the text */
     background-color:#d7c4c4; /* This makes the box fully white */
     border: 2px solid #d7c4c4; /* This adds a white border */
-    border-radius: 10px; /* This makes the edges curved */
-    padding: 5px; /* This adds some space around the text */
+    border-radius: 25px; /* This makes the edges curved */
+    padding: 2px; /* This adds some space around the text */
     animation: inOutAnimation 1s infinite;
 }
 @keyframes inOutAnimation {
@@ -62,7 +62,7 @@ nav a:hover {
     100% { transform: scale(1); }
 }
 section {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     opacity: 0;
     animation: fadeIn 1s forwards;
