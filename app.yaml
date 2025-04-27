@@ -1,0 +1,46 @@
+runtime: python39 # You can also use nodejs, java, etc. depending on your backend needs
+service: default
+handlers:
+  - url: /
+    static_files: index.html
+    upload: index.html
+    secure: always
+
+  - url: /(.*)\.html
+    static_files: \1.html
+    upload: (.*)\.html
+    secure: always
+
+  - url: /(.*)\.css
+    static_files: \1.css
+    upload: (.*)\.css
+    mime_type: text/css
+    secure: always
+
+  - url: /(.*)\.js
+    static_files: \1.js
+    upload: (.*)\.js
+    mime_type: application/javascript
+    secure: always
+
+  - url: /(.*)\.jpg
+    static_files: \1.jpg
+    upload: (.*)\.jpg
+    mime_type: image/jpeg
+    secure: always
+
+  - url: /(.*)\.png
+    static_files: \1.png
+    upload: (.*)\.png
+    mime_type: image/png
+    secure: always
+
+  - url: /(.*)\.pdf
+    static_files: \1.pdf
+    upload: (.*)\.pdf
+    mime_type: application/pdf
+    secure: always
+
+  - url: /.*
+    static_dir: .
+    secure: always
