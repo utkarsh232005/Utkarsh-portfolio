@@ -2,14 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
+:root {
+  --primary-color: #007bff; /* Example primary color */
+  --secondary-color: #6c757d; /* Example secondary color */
+  --accent-color: #ffc107; /* Example accent color */
+  --background-color: #f8f9fa; /* Light background */
+  --text-color: #343a40; /* Dark text for contrast */
+  --link-color: #0056b3;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400; /* Adjusted font weight */
     font-size: 18px; /* Adjusted font size */
     margin: 0;
     padding: 0;
-    background: #f4f4f4; /* Updated background color */
-    color: #333; /* Updated text color */
+    background: var(--background-color); /* Updated background color */
+    color: var(--text-color); /* Updated text color */
     transition: background-color 0.3s, color 0.3s;
     letter-spacing: 1px; /* Adjusted letter spacing */
     line-height: 1.7; /* Adjusted line height */
@@ -18,11 +27,14 @@ body {
 /* Removed body::before styles */
 
 header {
-    background-color: #333; /* Updated header background color */
+    background-color: var(--primary-color); /* Updated header background color */
     color: #fff;
     padding: 1rem 0;
     text-align: center;
     transition: background-color 0.3s;
+
+    /* Subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -44,7 +56,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #555; /* Updated hover background color */
+    background-color: var(--link-color); /* Updated hover background color */
     color: #fff;
 }
 
@@ -57,11 +69,17 @@ section {
     background-color: #fff; /* Added background color */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 1;
-    animation: none;
+    /* Add a subtle fade-in animation */
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 h1, h2 {
-    color: #333; /* Updated heading color */
+    color: var(--text-color); /* Updated heading color */
     transition: color 0.3s;
 }
 
@@ -106,7 +124,7 @@ img {
 /* Removed media queries */
 
 footer {
-    background-color: #333; /* Updated footer background color */
+    background-color: var(--primary-color); /* Updated footer background color */
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -123,6 +141,8 @@ form {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle border */
+    border: 1px solid #eee;
 }
 
 form input, form textarea {
@@ -138,13 +158,15 @@ form input, form textarea {
 
 form button {
     padding: 0.8rem 1.75rem;
-    background-color: #007bff; /* Updated button background color */
-    color: #fff;
+    background-color: var(--accent-color); /* Updated button background color */
+    color: var(--text-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: inherit;
+    /* Add a slight lift on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 form button:hover {
