@@ -1,5 +1,14 @@
 ### Changes to `index.html`
 
+- **Commit Message:** feat: Add welcome message animation to landing page
+
+This commit introduces a welcome message to the landing page and adds a fade-in animation to improve the user experience. The animation is implemented using CSS keyframes.
+- **Date:** Sun, 17 Aug 2025 14:28:37 GMT
+
+---
+
+### Changes to `index.html`
+
 - **Commit Message:** Update: Improve navigation bar UI with basic styling
 
 Applies basic styling to the navigation bar to enhance visual appeal and user experience. Includes background color, text color, padding, and removes list styling.
