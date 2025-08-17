@@ -1,3 +1,10 @@
+### Changes to `resume.html`
+
+- **Commit Message:** style: Update resume button and navbar styles
+- **Date:** Sun, 17 Aug 2025 17:53:49 GMT
+
+---
+
 ### Changes to `index.html`
 
 - **Commit Message:** feat: Add welcome message animation to landing page
