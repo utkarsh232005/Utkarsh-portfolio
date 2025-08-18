@@ -1,3 +1,10 @@
+### Changes to `index.html`
+
+- **Commit Message:** feat: Change font to Arial, sans-serif
+- **Date:** Mon, 18 Aug 2025 05:29:09 GMT
+
+---
+
 ### Changes to `resume.html`
 
 - **Commit Message:** style: Update resume button and navbar styles
