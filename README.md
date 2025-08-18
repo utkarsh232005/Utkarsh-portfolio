@@ -1,5 +1,12 @@
 ### Changes to `index.html`
 
+- **Commit Message:** feat: Update font to Segoe UI for improved readability
+- **Date:** Mon, 18 Aug 2025 16:50:40 GMT
+
+---
+
+### Changes to `index.html`
+
 - **Commit Message:** feat: Change font to Arial, sans-serif
 - **Date:** Mon, 18 Aug 2025 05:29:09 GMT
 
