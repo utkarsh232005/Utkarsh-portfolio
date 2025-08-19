@@ -1,5 +1,12 @@
 ### Changes to `index.html`
 
+- **Commit Message:** feat: Enhance welcome text animation with gradient and clipping effect
+- **Date:** Tue, 19 Aug 2025 13:22:24 GMT
+
+---
+
+### Changes to `index.html`
+
 - **Commit Message:** feat: Update font to Segoe UI for improved readability
 - **Date:** Mon, 18 Aug 2025 16:50:40 GMT
 
