@@ -37,30 +37,40 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+nav {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Centered navigation items */
-    gap: 2rem; /* Added gap between navigation items */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav li {
+    margin: 0;
 }
 
 nav a {
-    color: #fff; /* Updated navigation link color */
+    color: #fff;
     text-decoration: none;
-    font-weight: 500; /* Adjusted font weight */
-    padding: 0.75rem 1.5rem; /* Added padding */
-    border-radius: 0.25rem; /* Added border-radius */
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
     transition: color 0.3s, background-color 0.3s, transform 0.3s;
-    transform-origin: center;
     display: inline-block;
 }
 
 nav a:hover {
-    background-color: var(--link-color); /* Updated hover background color */
+    background-color: var(--link-color);
     color: #fff;
-    transform: scale(1.1); /* Slightly scale up on hover */
+    transform: scale(1.1);
 }
 
 section {
