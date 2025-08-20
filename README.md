@@ -1,3 +1,10 @@
+### Changes to `styles.css`
+
+- **Commit Message:** feat: Animate navbar links on hover
+- **Date:** Wed, 20 Aug 2025 16:06:00 GMT
+
+---
+
 ### Changes to `index.html`
 
 - **Commit Message:** feat: Enhance welcome text animation with gradient and clipping effect
