@@ -1,5 +1,12 @@
 ### Changes to `styles.css`
 
+- **Commit Message:** fix: Update navbar style and layout
+- **Date:** Wed, 20 Aug 2025 16:29:45 GMT
+
+---
+
+### Changes to `styles.css`
+
 - **Commit Message:** feat: Animate navbar links on hover
 - **Date:** Wed, 20 Aug 2025 16:06:00 GMT
 
