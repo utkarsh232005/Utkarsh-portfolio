@@ -52,12 +52,15 @@ nav a {
     font-weight: 500; /* Adjusted font weight */
     padding: 0.75rem 1.5rem; /* Added padding */
     border-radius: 0.25rem; /* Added border-radius */
-    transition: color 0.3s, background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    transform-origin: center;
+    display: inline-block;
 }
 
 nav a:hover {
     background-color: var(--link-color); /* Updated hover background color */
     color: #fff;
+    transform: scale(1.1); /* Slightly scale up on hover */
 }
 
 section {
