@@ -1,5 +1,21 @@
 ### Changes to `styles.css`
 
+- **Commit Message:** feat: Improve navbar styling and functionality
+
+This commit introduces several enhancements to the navbar:
+
+- Changed the background color to a dark gray (#333) for better contrast.
+- Added a stronger box-shadow for visual depth.
+- Implemented sticky positioning to keep the navbar at the top of the viewport during scrolling.
+- Evenly distributed navigation items using `justify-content: space-around`.
+- Reduced gap between navigation items.
+- Modified hover effect on nav links to use accent color and a slight vertical lift.
+- **Date:** Thu, 21 Aug 2025 13:40:04 GMT
+
+---
+
+### Changes to `styles.css`
+
 - **Commit Message:** fix: Update navbar style and layout
 - **Date:** Wed, 20 Aug 2025 16:29:45 GMT
 
