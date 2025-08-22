@@ -59,11 +59,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ScrollMagic animations
     sections.forEach(section => {
+        let tween = gsap.fromTo(section, {y: 50, opacity: 0}, {duration: 1, y: 0, opacity: 1, ease: "power2.out"});
+
         new ScrollMagic.Scene({
-            triggerElement: section, // point of execution
-            duration: 500, // pin the element for a total of 500px
+            triggerElement: section,
+            triggerHook: 0.8, // Adjust triggerHook to start animation when section is 80% visible
+            reverse: false // Prevent animation from reversing when scrolling back up
         })
-        .setPin(section) // the element we want to pin
+        .setTween(tween)
         .addTo(controller);
     });
 });
