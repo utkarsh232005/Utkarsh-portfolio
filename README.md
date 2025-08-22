@@ -1,3 +1,10 @@
+### Changes to `scripts.js`
+
+- **Commit Message:** feat: Update animations with GSAP for smoother transitions
+- **Date:** Fri, 22 Aug 2025 17:39:56 GMT
+
+---
+
 ### Changes to `styles.css`
 
 - **Commit Message:** feat: Improve navbar styling and functionality
