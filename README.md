@@ -1,3 +1,10 @@
+### Changes to `about.html`
+
+- **Commit Message:** feat: Add animated characters to about section for enhanced style
+- **Date:** Sun, 24 Aug 2025 16:45:25 GMT
+
+---
+
 ### Changes to `scripts.js`
 
 - **Commit Message:** feat: Update animations with GSAP for smoother transitions
