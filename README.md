@@ -1,5 +1,12 @@
 ### Changes to `about.html`
 
+- **Commit Message:** feat: Remove animation from about page
+- **Date:** Mon, 25 Aug 2025 15:46:01 GMT
+
+---
+
+### Changes to `about.html`
+
 - **Commit Message:** feat: Add animated characters to about section for enhanced style
 - **Date:** Sun, 24 Aug 2025 16:45:25 GMT
 
