@@ -1,3 +1,19 @@
+### Changes to `index.html`
+
+- **Commit Message:** feat: Redesign landing page for a professional look
+
+This commit redesigns the landing page (index.html) and updates the CSS styles to create a more professional and visually appealing design.  The changes include:
+
+- Updated font family to Arial for improved readability.
+- Implemented a new color scheme with a light background and dark text.
+- Restructured the navigation menu for better usability.
+- Added a "View My Work" button to the home section.
+- Introduced a portfolio section with placeholder images and descriptions.
+- Refactored CSS for better organization and maintainability.
+- **Date:** Mon, 08 Sep 2025 17:15:04 GMT
+
+---
+
 ### Changes to `about.html`
 
 - **Commit Message:** feat: Remove animation from about page
