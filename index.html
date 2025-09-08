@@ -6,48 +6,128 @@
     <title>Utkarsh Patrikar - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Add animation to the welcome message */
-        #home h1 {
-            animation: textclip 3s linear infinite;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font */
-            text-transform: uppercase;
-            background-image: linear-gradient(
-              -225deg,
-              #231557 0%,
-              #44107a 29%,
-              #ff1361 67%,
-              #fff800 100%
-            );
-            background-size: auto auto;
-            background-clip: border-box;
-            background-size: 200% auto;
-            color: #fff;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: textclip 3s linear infinite;
-            display: inline-block;
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Added font to body */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
 
-        @keyframes textclip {
-          to {
-            background-position: 200% center;
-          }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
         }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        #home {
+            padding: 5rem 0;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        #home h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        #home h2 {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        #contact {
+            padding: 3rem 0;
+            text-align: center;
+            background-color: #eee;
+        }
+
+        #contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* New styles for portfolio items */
+        .portfolio-item {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        /* Add more styles as needed for different sections */
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333;">
-                <li style="float: left;"><a href="index.html" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Home</a></li>
-                <li style="float: left;"><a href="portfolio.html" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Portfolio</a></li>
-                <li style="float: left;"><a href="about.html" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">About</a></li>
-                <li style="float: left;"><a href="resume.html" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Resume</a></li>
-                <li style="float: left;"><a href="contact.html" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Contact</a></li>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -55,6 +135,22 @@
         <h1>UTKARSH PATRIKAR</h1>
         <h2>Creative Designer & Developer</h2>
         <p>Welcome to my online portfolio! I am passionate about creating innovative and visually appealing designs. Explore my projects and get in touch!</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="placeholder-image.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Short description of project 1.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="placeholder-image.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Short description of project 2.</p>
+        </div>
+        <!-- Add more portfolio items here -->
     </section>
 
     <section id="contact">
